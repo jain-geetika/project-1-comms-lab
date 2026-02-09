@@ -1,0 +1,282 @@
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.align_everything {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.align_everything_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.home_page_wrap
+{
+     background-image: url(notebook.jpeg);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.home_page_wrap .section1 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: baseline;
+    margin-bottom: 2rem;
+
+}
+
+.home_page_wrap .section1 .left {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.home_page_wrap .section1 .right {
+    background-color: #cab1b1;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin-right: 3%;
+    font-size: 2.6rem;
+}
+
+.home_page_wrap .section1 .center {
+    display: flex;
+    font-size: 4rem;
+
+}
+
+
+
+/*css for homepage */
+.home_page_wrap .section2 {
+    display: flex;
+    flex-direction: column;
+    background: gray;
+    margin: 1rem 3rem;
+    border: 1px solid black;
+
+}
+
+
+.home_page_wrap .section2 .content-wrap {
+    background: #c4c4d3;
+    padding: 2rem;
+    column-count: 2;
+    column-gap: 0.5rem;
+}
+
+.home_page_wrap .section2 .content-wrap:nth-child(even) {
+    background-color: white;
+}
+
+
+
+.home_page_wrap .section3 {
+    display: flex;
+    justify-content: center;
+}
+
+.home_page_wrap .section3 .btn {
+    background: #c2b4b4;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+}
+
+.home_page_wrap .section3 .btn:hover {
+    background-color: green;
+}
+
+.home_page_wrap .section3 .btn a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.home_page_wrap .section3 #enroll.disabled {
+    pointer-events: none;
+    opacity: 1;
+}
+
+.home_page_wrap .section3 #enroll.time-over {
+    pointer-events: auto !important;
+
+}
+
+.home_page_wrap .section3 #enroll.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/*css for watchpage */
+
+.watch_page_wrap .section1 .center{
+    font-size: 4rem;
+}
+
+.section2_img {
+    column-count: 2;
+    column-gap: 1.5rem;
+    padding-right: 260px;
+    padding-left: 260px;
+    padding-bottom: 15px;
+    /*centers the whole block */
+}
+
+.section2_img .img_item {
+
+    margin-bottom: 1.5rem;
+    /*gap between rows */
+}
+
+.section2_img .img_item img {
+    width: 100%;
+    /*fit column width */
+    height: auto;
+    /*keep proportion */
+    display: block;
+}
+.watch_page_wrap{
+    background-image: url(notebook.jpeg);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+}/*https://stackoverflow.com/questions/69068956/how-to-scale-background-image-with-zoom*/
+.watch_page_wrap .section2_video {
+    background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.watch_page_wrap .section3_video {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.watch_page_wrap .section3_video .btn_right {
+    background: #c2b4b4;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+
+}
+.watch_page_wrap .section3_video .btn_right a {
+    text-decoration: none;
+    color: black;
+}
+.watch_page_wrap .section3_video .btn_left a {
+    text-decoration: none;
+    color: black;
+}
+.watch_page_wrap .section3_video .btn_left {
+    background: #c2b4b4;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.About_page_wrap {
+    background-image: url(notebook.jpeg);
+    background-size: cover;
+background-repeat: repeat;
+background-position: center center;
+}
+
+.About_page_wrap .section1 .center 
+{
+    display: flex;
+    font-size: 4rem;
+}
+
+.About_page_wrap .btn_left a {
+    text-decoration: none;
+    color: black;}
+
+.About_page_wrap   .btn_left {
+    background: #c2b4b4;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    display: inline;
+    justify-content: center;
+}
+
+.About_page_wrap .section2_text {
+    font-size: 2rem;
+    
+    background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
+    /* https://www.w3schools.com/css/css3_gradients.asp */
+    margin-bottom:2rem
+}
+.About_page_wrap .align_button
+{
+    display: flex;
+    justify-content: space-around;
+}
+.cast_page_wrap
+{
+     background-image: url(notebook.jpeg);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+}
+.cast_page_wrap .section1 .center{
+    font-size: 4rem;
+}
+
+.cast_page_wrap .btn {
+    background: #c2b4b4;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    display: inline;
+
+
+}
+
+.cast_page_wrap .btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.cast_page_wrap .align_button
+{
+    display: flex;
+    justify-content: space-around;
+}
