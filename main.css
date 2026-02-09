@@ -1,7 +1,7 @@
 body {
     padding: 10px;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -18,13 +18,14 @@ body {
     align-items: center;
 
 }
-.home_page_wrap
-{
-     background-image: url(notebook.jpeg);
+
+.home_page_wrap {
+    background-image: url(notebook.jpeg);
     background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 .home_page_wrap .section1 {
     display: flex;
     justify-content: space-between;
@@ -127,7 +128,7 @@ background-position: center center;
 
 /*css for watchpage */
 
-.watch_page_wrap .section1 .center{
+.watch_page_wrap .section1 .center {
     font-size: 4rem;
 }
 
@@ -141,9 +142,31 @@ background-position: center center;
 }
 
 .section2_img .img_item {
-
+    position: relative;
     margin-bottom: 1.5rem;
+    border: 1px solid black;
+    height: 100%;
     /*gap between rows */
+}
+
+.section2_img .img_item .img_desc {
+    position: absolute;
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*to indicate that this has more priority than the image(default z-index is 0) */
+}
+
+.section2_img .img_item .img_desc:hover {
+    opacity: 1;
 }
 
 .section2_img .img_item img {
@@ -152,13 +175,17 @@ background-position: center center;
     height: auto;
     /*keep proportion */
     display: block;
+    overflow: hidden;
 }
-.watch_page_wrap{
+
+.watch_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-}/*https://stackoverflow.com/questions/69068956/how-to-scale-background-image-with-zoom*/
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*https://stackoverflow.com/questions/69068956/how-to-scale-background-image-with-zoom*/
 .watch_page_wrap .section2_video {
     background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
     padding-top: 1rem;
@@ -190,14 +217,17 @@ background-position: center center;
 
 
 }
+
 .watch_page_wrap .section3_video .btn_right a {
     text-decoration: none;
     color: black;
 }
+
 .watch_page_wrap .section3_video .btn_left a {
     text-decoration: none;
     color: black;
 }
+
 .watch_page_wrap .section3_video .btn_left {
     background: #c2b4b4;
     font-size: 2rem;
@@ -207,24 +237,43 @@ background-position: center center;
     padding-top: 0.5rem;
 }
 
+
+
 .About_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
-background-repeat: repeat;
-background-position: center center;
+    background-repeat: repeat;
+    background-position: center center;
 }
 
-.About_page_wrap .section1 .center 
-{
+.About_page_wrap .section1 .center {
     display: flex;
     font-size: 4rem;
 }
 
+.About_page_wrap .features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+}
+
+.About_page_wrap .features .feature-card {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.About_page_wrap .features .feature-card:hover {
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+}
+
 .About_page_wrap .btn_left a {
     text-decoration: none;
-    color: black;}
+    color: black;
+}
 
-.About_page_wrap   .btn_left {
+.About_page_wrap .btn_left {
     background: #c2b4b4;
     font-size: 2rem;
     padding-left: 3rem;
@@ -237,24 +286,25 @@ background-position: center center;
 
 .About_page_wrap .section2_text {
     font-size: 2rem;
-    
+    padding: 10px;
     background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
     /* https://www.w3schools.com/css/css3_gradients.asp */
-    margin-bottom:2rem
+    margin-bottom: 2rem
 }
-.About_page_wrap .align_button
-{
+
+.About_page_wrap .align_button {
     display: flex;
     justify-content: space-around;
 }
-.cast_page_wrap
-{
-     background-image: url(notebook.jpeg);
+
+.cast_page_wrap {
+    background-image: url(notebook.jpeg);
     background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.cast_page_wrap .section1 .center{
+
+.cast_page_wrap .section1 .center {
     font-size: 4rem;
 }
 
@@ -275,8 +325,7 @@ background-position: center center;
     color: black;
 }
 
-.cast_page_wrap .align_button
-{
+.cast_page_wrap .align_button {
     display: flex;
     justify-content: space-around;
 }
