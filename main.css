@@ -189,7 +189,7 @@ body {
     align-items: center;
 
 }
-
+/* about the movie button*/
 .watch_page_wrap .section3_video .btn_right {
     background: white;
     border: 5px solid #008769;
@@ -215,7 +215,7 @@ body {
     text-decoration: none;
     color: #3D4D5D;
 }
-
+/* cast button */
 .watch_page_wrap .section3_video .btn_left a {
     text-decoration: none;
     color: #3D4D5D;
@@ -277,11 +277,11 @@ body {
 }
 
 .About_page_wrap .features .feature-card:hover {
-    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    box-shadow: 0 0 40px rgba(33, 33, 33, .2);
     /*https://www.w3schools.com/css/css3_shadows_box.asp*/
-    background-color: #008769;
-    color: #ffffff;
+    
 }
+/* for back button*/
 
 .About_page_wrap .btn_left a {
     text-decoration: none;
@@ -310,6 +310,7 @@ body {
     color: #ffffff;
 
 }
+/* for description*/
 
 .About_page_wrap .section2_text {
     font-size: 2rem;
@@ -373,7 +374,7 @@ body {
     /*to indicate that this has more priority than the image(default z-index is 0) */
     /*https://www.w3schools.com/cssref/pr_pos_z-index.php*/
 }
-
+/* to show description of cast members */
 .section2_img .img_item .img_desc:hover {
     opacity: 1;
     color: #3D4D5D;
