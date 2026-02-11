@@ -22,7 +22,7 @@ function start() {
     //clearing the timer
 
     timer = setInterval(() => {
-        //setinterval has two arguement, given function and time interval, here the given function adds one second to the timer
+        //set interval has two arguement, given function and time interval, here the given function adds one second to the timer
         // to autocall self function according to given itnerval
         s++;
 
@@ -52,12 +52,12 @@ function start() {
 
         document.getElementById("clock").innerText = newTime;
         const now = parseTime12(newTime);
-        const start = parseTime12("03:59:58 PM");// time is a string, to increment it you must convert to integer
-        const end = parseTime12("04:00:00 PM");
+        const start = parseTime12("04:00:00 PM");// time is a string, to increment it you must convert to integer
+        const end = parseTime12("04:00:05 PM");
 
         const enrollDiv = document.getElementById("enroll");
 
-        if (now >= start && now <= end) {// only active between 3:59:55 and 4:00:00pm
+        if (now >= start && now <= end) {// only active between 4:00:00pm and 4:00:05pm
             enrollDiv.classList.remove("disabled");
             enrollDiv.classList.add("active");
         } else {
@@ -69,13 +69,13 @@ function start() {
             document.getElementsByClassName("time-over")[0]
                 .addEventListener("click", function (e) {
                     e.preventDefault();
-                    if (confirm("You can't enroll, time over ⏰\nClick OK to reload.")) {
+                    if (confirm("Sorry, you were too late! \nClick OK to reload.")) {
                         location.reload();
                     }
                 });
         }
-        // Stop at next minute (when seconds = 00)
-        if (s === 0) {
+        //stop at 04:00:05
+        if (s === 5) {
             clearInterval(timer);
         }
 

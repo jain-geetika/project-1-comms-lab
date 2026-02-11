@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Medium.eot');
+    src: url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Medium.woff2') format('woff2'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Medium.woff') format('woff'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Book.eot');
+    src: url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Book.woff2') format('woff2'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Book.woff') format('woff'),
+        url('https://mphclub.com/wp-content/uploads/2020/09/Gotham-Book.ttf') format('truetype')
+}

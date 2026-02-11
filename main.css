@@ -1,7 +1,11 @@
+@import url("https://cdn.statically.io/gist/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/fad2f254369fb54250260077a4c87391a6280c52/gotham.css");
+
+/*Gotham font: https://gist.github.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59*/
 body {
     padding: 10px;
     margin: 0;
-    font-family: ;
+    font-family: 'GothamPro', Arial, sans-serif;
+    font-size: 22px;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -16,15 +20,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    /*used to align section in the center*/
 }
 
+/*css for homepage */
 .home_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/*background for the entire home page*/
 
 .home_page_wrap .section1 {
     display: flex;
@@ -33,66 +40,77 @@ body {
     align-items: baseline;
     margin-bottom: 2rem;
 
+
 }
 
 .home_page_wrap .section1 .left {
-    font-size: 4rem;
+    font-size: 3.2rem;
+    color: #3D4D5D;
     display: flex;
     align-items: center;
     margin-left: 3rem;
 }
 
 .home_page_wrap .section1 .right {
-    background-color: #cab1b1;
+    background: #ffffff;
+    border: 5px solid #008769;
+    color: #3D4D5D;
     display: flex;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 3%;
+    padding-top: 1rem;
+    padding-bottom: 0.5%;
     padding-right: 3%;
     padding-left: 3%;
     margin-right: 3%;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
 }
 
 .home_page_wrap .section1 .center {
     display: flex;
+    color: #3D4D5D;
     font-size: 4rem;
 
 }
 
 
-
-/*css for homepage */
 .home_page_wrap .section2 {
     display: flex;
     flex-direction: column;
     background: gray;
+    color: #3D4D5D;
     margin: 1rem 3rem;
-    border: 1px solid black;
+    border: 3px solid black;
 
 }
 
 
 .home_page_wrap .section2 .content-wrap {
-    background: #c4c4d3;
+    background: white;
+    border: 1px solid black;
+    color: #3D4D5D;
     padding: 2rem;
     column-count: 2;
     column-gap: 0.5rem;
 }
 
 .home_page_wrap .section2 .content-wrap:nth-child(even) {
-    background-color: white;
+    background-color: #ebf0f0;
+    color: #3D4D5D;
 }
 
+/*to color every alternate block a different color */
 
 
 .home_page_wrap .section3 {
     display: flex;
+    color: #3D4D5D;
     justify-content: center;
 }
 
 .home_page_wrap .section3 .btn {
-    background: #c2b4b4;
+    background: #ffffff;
+    color: #3D4D5D;
+    border: 5px solid #008769;
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -101,24 +119,37 @@ body {
 
 }
 
+/*enroll button */
+
 .home_page_wrap .section3 .btn:hover {
-    background-color: green;
+
+    background-color: #008769;
+}
+
+/*https://www.w3schools.com/cssref/sel_hover.php/*
+/*when you hover, the enroll button changes colors*/
+.home_page_wrap .section3 .btn:hover a {
+
+    color: white;
 }
 
 .home_page_wrap .section3 .btn a {
     text-decoration: none;
-    color: black;
-
+    color: #3D4D5D;
 }
+
+
 
 .home_page_wrap .section3 #enroll.disabled {
     pointer-events: none;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events*/
     opacity: 1;
 }
 
+/*to disable the enroll button before 4:00:00pm */
+
 .home_page_wrap .section3 #enroll.time-over {
     pointer-events: auto !important;
-
 }
 
 .home_page_wrap .section3 #enroll.active {
@@ -130,74 +161,26 @@ body {
 
 .watch_page_wrap .section1 .center {
     font-size: 4rem;
-}
-
-.section2_img {
-    column-count: 2;
-    column-gap: 1.5rem;
-    padding-right: 260px;
-    padding-left: 260px;
-    padding-bottom: 15px;
-    /*centers the whole block */
-}
-
-.section2_img .img_item {
-    position: relative;
-    margin-bottom: 1.5rem;
-    border: 1px solid black;
-    height: 100%;
-    /*gap between rows */
-}
-
-.section2_img .img_item .img_desc {
-    position: absolute;
-    background-color: grey;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: opacity ease-in-out 1s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*to indicate that this has more priority than the image(default z-index is 0) */
-}
-
-.section2_img .img_item .img_desc:hover {
-    opacity: 1;
-}
-
-.section2_img .img_item img {
-    width: 100%;
-    /*fit column width */
-    height: auto;
-    /*keep proportion */
-    display: block;
-    overflow: hidden;
+    color: #3D4D5D;
 }
 
 .watch_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
+    color: #3D4D5D;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 /*https://stackoverflow.com/questions/69068956/how-to-scale-background-image-with-zoom*/
 .watch_page_wrap .section2_video {
-    background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
+    background-image: linear-gradient(to bottom right, #8d39c5, #dcedff);
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
 }
-
-
-
-
 
 
 .watch_page_wrap .section3_video {
@@ -208,7 +191,8 @@ body {
 }
 
 .watch_page_wrap .section3_video .btn_right {
-    background: #c2b4b4;
+    background: white;
+    border: 5px solid #008769;
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -218,18 +202,28 @@ body {
 
 }
 
+.watch_page_wrap .section3_video .btn_right:hover {
+    background-color: #008769;
+}
+
+.watch_page_wrap .section3_video .btn_right:hover a {
+    color: white
+}
+
+
 .watch_page_wrap .section3_video .btn_right a {
     text-decoration: none;
-    color: black;
+    color: #3D4D5D;
 }
 
 .watch_page_wrap .section3_video .btn_left a {
     text-decoration: none;
-    color: black;
+    color: #3D4D5D;
 }
 
 .watch_page_wrap .section3_video .btn_left {
-    background: #c2b4b4;
+    background: white;
+    border: 5px solid #008769;
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -237,8 +231,15 @@ body {
     padding-top: 0.5rem;
 }
 
+.watch_page_wrap .section3_video .btn_left:hover {
+    background-color: #008769;
+}
 
+.watch_page_wrap .section3_video .btn_left:hover a {
+    color: #ffffff;
+}
 
+/*CSS for About page*/
 .About_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
@@ -249,32 +250,47 @@ body {
 .About_page_wrap .section1 .center {
     display: flex;
     font-size: 4rem;
+    color: #3D4D5D;
 }
 
 .About_page_wrap .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    column-gap: 2rem;
     margin-bottom: 10px;
+    margin: 10px;
+    font-size: 2rem;
 
 }
 
 .About_page_wrap .features .feature-card {
-    background-color: grey;
+    background-color: white;
+    border: 5px solid #008769;
+    color: #3D4D5D;
     padding: 10px;
-    border-radius: 20px;
+    text-align: center;
+}
+
+.About_page_wrap .features .feature-card .text {
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 .About_page_wrap .features .feature-card:hover {
     box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    /*https://www.w3schools.com/css/css3_shadows_box.asp*/
+    background-color: #008769;
+    color: #ffffff;
 }
 
 .About_page_wrap .btn_left a {
     text-decoration: none;
-    color: black;
+    color: #3D4D5D;
 }
 
 .About_page_wrap .btn_left {
-    background: #c2b4b4;
+    background: #ffffff;
+    border: 5px solid #008769;
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -282,12 +298,24 @@ body {
     padding-top: 0.5rem;
     display: inline;
     justify-content: center;
+
+}
+
+.About_page_wrap .btn_left:hover {
+    background-color: #008769;
+
+}
+
+.About_page_wrap .btn_left:hover a {
+    color: #ffffff;
+
 }
 
 .About_page_wrap .section2_text {
     font-size: 2rem;
     padding: 10px;
-    background-image: linear-gradient(to bottom right, rgb(153, 208, 240), yellow);
+    color: #3D4D5D;
+    background-image: linear-gradient(to bottom right, #dfc1f2, #dcedff);
     /* https://www.w3schools.com/css/css3_gradients.asp */
     margin-bottom: 2rem
 }
@@ -297,6 +325,7 @@ body {
     justify-content: space-around;
 }
 
+/* CSS for Cast Page*/
 .cast_page_wrap {
     background-image: url(notebook.jpeg);
     background-size: cover;
@@ -306,23 +335,81 @@ body {
 
 .cast_page_wrap .section1 .center {
     font-size: 4rem;
+    color: #3D4D5D;
+}
+
+.section2_img {
+    column-count: 2;
+    column-gap: 1.5rem;
+    padding-right: 260px;
+    padding-left: 260px;
+    padding-bottom: 15px;
+    /*because I wanted two columns of images*/
+}
+
+.section2_img .img_item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    color: #3D4D5D;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.section2_img .img_item .img_desc {
+    position: absolute;
+    background-image: radial-gradient(#9551bf, white);
+    color: #3D4D5D;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity ease-in-out 1s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /*to indicate that this has more priority than the image(default z-index is 0) */
+    /*https://www.w3schools.com/cssref/pr_pos_z-index.php*/
+}
+
+.section2_img .img_item .img_desc:hover {
+    opacity: 1;
+    color: #3D4D5D;
+}
+
+.section2_img .img_item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
 }
 
 .cast_page_wrap .btn {
-    background: #c2b4b4;
+    background: white;
+    border: solid 5px #008769;
     font-size: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     display: inline;
+    /* for back button */
 
+}
 
+.cast_page_wrap .btn:hover {
+    background-color: #008769;
+}
+
+.cast_page_wrap .btn:hover a {
+    color: #ffffff;
 }
 
 .cast_page_wrap .btn a {
     text-decoration: none;
-    color: black;
+    color: #3D4D5D;
 }
 
 .cast_page_wrap .align_button {
